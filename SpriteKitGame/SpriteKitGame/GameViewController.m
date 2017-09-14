@@ -22,10 +22,13 @@
     GameScene *sceneNode = (GameScene *)scene.rootNode;
     
     // Copy gameplay related content over to the scene
+//    复制游戏相关内容到现场
     sceneNode.entities = [scene.entities mutableCopy];
     sceneNode.graphs = [scene.graphs mutableCopy];
     
     // Set the scale mode to scale to fit the window
+//这里SKSceneScaleModeAspectFill表示按比例放大SKView，同时保持场景的纵横比。如果视图有不同的纵横比，可能会出现一些裁剪。
+//设置scenennode在窗口上展示的样式
     sceneNode.scaleMode = SKSceneScaleModeAspectFill;
     
     SKView *skView = (SKView *)self.view;
@@ -33,7 +36,9 @@
     // Present the scene
     [skView presentScene:sceneNode];
     
+//    FPS是图像领域中的定义，是指画面每秒传输帧数，通俗来讲就是指动画或视频的画面数.右下角的第一个参数以及值
     skView.showsFPS = YES;
+//    屏幕右下角第二个参数以及值，（node：2）（nodecount表示节点的数量）（个人可以理解为：这个view上面有在某一时刻多少元素存在）
     skView.showsNodeCount = YES;
 }
 
