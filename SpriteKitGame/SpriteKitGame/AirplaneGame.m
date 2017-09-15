@@ -59,7 +59,7 @@
     
 }
 
-#pragma mark ---- 创建飞船 ----
+#pragma mark ---- 创建静止 ----
 
 -(void)planeNode{
     
