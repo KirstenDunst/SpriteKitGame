@@ -16,6 +16,11 @@
 		1F8AEF0C1F6A51E5006C06D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8AEF0A1F6A51E5006C06D4 /* Main.storyboard */; };
 		1F8AEF0E1F6A51E5006C06D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8AEF0D1F6A51E5006C06D4 /* Assets.xcassets */; };
 		1F8AEF111F6A51E5006C06D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8AEF0F1F6A51E5006C06D4 /* LaunchScreen.storyboard */; };
+		1F8AEF1A1F6A633B006C06D4 /* MyGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AEF191F6A633A006C06D4 /* MyGameScene.m */; };
+		1F8AEF1C1F6A6881006C06D4 /* 59a4cfe2550cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F8AEF1B1F6A6881006C06D4 /* 59a4cfe2550cc.jpg */; };
+		1F8AEF1F1F6A6FB4006C06D4 /* ArcheryScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AEF1E1F6A6FB4006C06D4 /* ArcheryScene.m */; };
+		1F9931281F6B710000786D7E /* archer001.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9931271F6B710000786D7E /* archer001.png */; };
+		1F99312A1F6B711500786D7E /* BallTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9931291F6B711500786D7E /* BallTexture.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,13 @@
 		1F8AEF0D1F6A51E5006C06D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F8AEF101F6A51E5006C06D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F8AEF121F6A51E5006C06D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8AEF181F6A633A006C06D4 /* MyGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGameScene.h; sourceTree = "<group>"; };
+		1F8AEF191F6A633A006C06D4 /* MyGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGameScene.m; sourceTree = "<group>"; };
+		1F8AEF1B1F6A6881006C06D4 /* 59a4cfe2550cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 59a4cfe2550cc.jpg; sourceTree = "<group>"; };
+		1F8AEF1D1F6A6FB4006C06D4 /* ArcheryScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcheryScene.h; sourceTree = "<group>"; };
+		1F8AEF1E1F6A6FB4006C06D4 /* ArcheryScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcheryScene.m; sourceTree = "<group>"; };
+		1F9931271F6B710000786D7E /* archer001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = archer001.png; sourceTree = "<group>"; };
+		1F9931291F6B711500786D7E /* BallTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallTexture.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +83,16 @@
 				1F8AEF021F6A51E5006C06D4 /* Actions.sks */,
 				1F8AEF041F6A51E5006C06D4 /* GameScene.h */,
 				1F8AEF051F6A51E5006C06D4 /* GameScene.m */,
+				1F8AEF181F6A633A006C06D4 /* MyGameScene.h */,
+				1F8AEF191F6A633A006C06D4 /* MyGameScene.m */,
 				1F8AEF071F6A51E5006C06D4 /* GameViewController.h */,
 				1F8AEF081F6A51E5006C06D4 /* GameViewController.m */,
+				1F8AEF1D1F6A6FB4006C06D4 /* ArcheryScene.h */,
+				1F8AEF1E1F6A6FB4006C06D4 /* ArcheryScene.m */,
 				1F8AEF0A1F6A51E5006C06D4 /* Main.storyboard */,
+				1F8AEF1B1F6A6881006C06D4 /* 59a4cfe2550cc.jpg */,
+				1F9931271F6B710000786D7E /* archer001.png */,
+				1F9931291F6B711500786D7E /* BallTexture.png */,
 				1F8AEF0D1F6A51E5006C06D4 /* Assets.xcassets */,
 				1F8AEF0F1F6A51E5006C06D4 /* LaunchScreen.storyboard */,
 				1F8AEF121F6A51E5006C06D4 /* Info.plist */,
@@ -151,8 +170,11 @@
 				1F8AEF0C1F6A51E5006C06D4 /* Main.storyboard in Resources */,
 				1F8AEF011F6A51E5006C06D4 /* GameScene.sks in Resources */,
 				1F8AEF0E1F6A51E5006C06D4 /* Assets.xcassets in Resources */,
+				1F8AEF1C1F6A6881006C06D4 /* 59a4cfe2550cc.jpg in Resources */,
 				1F8AEF111F6A51E5006C06D4 /* LaunchScreen.storyboard in Resources */,
 				1F8AEF031F6A51E5006C06D4 /* Actions.sks in Resources */,
+				1F99312A1F6B711500786D7E /* BallTexture.png in Resources */,
+				1F9931281F6B710000786D7E /* archer001.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8AEF091F6A51E5006C06D4 /* GameViewController.m in Sources */,
+				1F8AEF1F1F6A6FB4006C06D4 /* ArcheryScene.m in Sources */,
 				1F8AEEFF1F6A51E5006C06D4 /* AppDelegate.m in Sources */,
 				1F8AEF061F6A51E5006C06D4 /* GameScene.m in Sources */,
 				1F8AEEFC1F6A51E5006C06D4 /* main.m in Sources */,
+				1F8AEF1A1F6A633B006C06D4 /* MyGameScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +349,7 @@
 				1F8AEF171F6A51E5006C06D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
