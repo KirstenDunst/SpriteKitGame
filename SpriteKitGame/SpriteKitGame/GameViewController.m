@@ -10,6 +10,7 @@
 //#import "GameScene.h"
 
 #import "MyGameScene.h"
+#import "AirplaneGame.h"
 
 @implementation GameViewController
 
@@ -51,7 +52,10 @@
     SKView *skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
-    MyGameScene *gameScane = [[MyGameScene alloc]initWithSize:self.view.frame.size];
+//    测试1
+//    MyGameScene *gameScane = [[MyGameScene alloc]initWithSize:self.view.frame.size];
+//    测试2
+    AirplaneGame *gameScane = [[AirplaneGame alloc]initWithSize:self.view.frame.size];
     [skView presentScene:gameScane];
 }
 

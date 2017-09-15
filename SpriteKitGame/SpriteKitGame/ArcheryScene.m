@@ -13,7 +13,7 @@
 
 @interface ArcheryScene ()<SKPhysicsContactDelegate>
 {
-    uint32_t ballCategory;
+    uint32_t ballCategory ;
     uint32_t arrowCategory;
 }
 @property (nonatomic , assign) int score;
@@ -30,20 +30,12 @@
     }
     return _archerAnimation;
 }
-- (void)sceneDidLoad{
-    //        进行初始化操作
-    self.score = 0;
-    self.ballcount = 10;
-    //        设置重力模型的标准，gravity的默认值是0.0，-9.8
-    self.physicsWorld.gravity = CGVectorMake(0, -1.0);
-    //        设置物理碰撞模型代理。为以后的物理撞击做准备
-    self.physicsWorld.contactDelegate = (id)self;
-    [self initArcheryScene];
-
-}
 //首先执行
 - (void)didMoveToView:(SKView *)view{
-    if (!self.scene) {
+    [super didMoveToView:view];
+    ballCategory = 1;
+//    创建背景
+    [self backgroundNode];
 //        进行初始化操作
         self.score = 0;
         self.ballcount = 10;
@@ -52,8 +44,24 @@
 //        设置物理碰撞模型代理。为以后的物理撞击做准备
         self.physicsWorld.contactDelegate = (id)self;
         [self initArcheryScene];
-    }
 }
+#pragma mark ----创建背景----
+
+-(void)backgroundNode{
+    
+    SKSpriteNode *backgroundNode = [SKSpriteNode spriteNodeWithImageNamed:@"59a4cfe2550cc.jpg"];
+    
+    backgroundNode.position = CGPointZero;
+    
+    backgroundNode.zPosition = 0;
+    
+    backgroundNode.anchorPoint = CGPointZero;
+    
+    backgroundNode.size = self.size;
+    
+    [self addChild:backgroundNode];
+}
+
 - (void)initArcheryScene{
 //    设置该场景的一些参数
     self.backgroundColor = [SKColor whiteColor];
@@ -98,7 +106,8 @@
 //    给每个小球都赋予物理模型，这样小球就有了重力，自动下降。
     ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:(ball.size.width/2)-7];
     ball.physicsBody.usesPreciseCollisionDetection = YES;
-    
+//    物体是否受力
+    ball.physicsBody.dynamic = YES;
 //    设置这个球的种类掩码（用于决定是否能够发生碰撞反应）
     ball.physicsBody.categoryBitMask = ballCategory;
     
@@ -181,7 +190,6 @@
     }];
     SKAction *sequeue = [SKAction sequence:@[fadeout,welcomeReturn]];
     [self runAction:sequeue];
-    
 }
 
 

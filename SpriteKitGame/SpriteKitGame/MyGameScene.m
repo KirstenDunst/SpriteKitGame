@@ -13,26 +13,13 @@
 
 @implementation MyGameScene
 
-- (void)sceneDidLoad{
-    [super sceneDidLoad];
-    
-    [self frameCreate];
-}
-
-- (void)frameCreate{
-    self.backgroundColor = [SKColor colorWithPatternImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"59a4cfe2550cc" ofType:@"jpg"]]];
-    self.backgroundColor = [SKColor greenColor];
-    self.scaleMode = SKSceneScaleModeAspectFill;
-    [self addChild:[self createWelecomeNote]];
-}
 //这个方法会在当前场景展示之前，自动调用
 //重载这个方法，当游戏加载到这个场景的时候，会自动调用这个方法
 - (void)didMoveToView:(SKView *)view{
-    if (!self.scene) {
-        self.backgroundColor = [SKColor greenColor];
-        self.scaleMode = SKSceneScaleModeAspectFill;
-        [self addChild:[self createWelecomeNote]];
-    }
+    [super didMoveToView:view];
+    self.backgroundColor = [SKColor lightGrayColor];
+    self.scaleMode = SKSceneScaleModeAspectFill;
+    [self addChild:[self createWelecomeNote]];
 }
 - (SKLabelNode *)createWelecomeNote{
     SKLabelNode *welcomeNote = [SKLabelNode labelNodeWithFontNamed:@"Bradley Hand"];
@@ -59,7 +46,6 @@
 //            执行过渡，跳转到下一个场景
             [self.view presentScene:archeryScene transition:door];
         }];
-  
     }
 }
 @end
