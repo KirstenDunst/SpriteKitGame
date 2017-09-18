@@ -53,9 +53,9 @@
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
 //    测试1
-//    MyGameScene *gameScane = [[MyGameScene alloc]initWithSize:self.view.frame.size];
+    MyGameScene *gameScane = [[MyGameScene alloc]initWithSize:self.view.frame.size];
 //    测试2
-    AirplaneGame *gameScane = [[AirplaneGame alloc]initWithSize:self.view.frame.size];
+//    AirplaneGame *gameScane = [[AirplaneGame alloc]initWithSize:self.view.frame.size];
     [skView presentScene:gameScane];
 }
 

@@ -46,7 +46,6 @@
         [self initArcheryScene];
 }
 #pragma mark ----创建背景----
-
 -(void)backgroundNode{
     
     SKSpriteNode *backgroundNode = [SKSpriteNode spriteNodeWithImageNamed:@"59a4cfe2550cc.jpg"];
@@ -81,7 +80,6 @@
         [archerFrames addObject:[archerAtlas textureNamed:texture]];
     }
     self.archerAnimation = archerFrames;
-    
     
 //    实现小球不断从顶部掉下的动作。循环制定次数。循环结束的时候执行gameover方法。
     SKAction *releaseBall = [SKAction sequence:@[
@@ -129,6 +127,7 @@
         SKAction *sequence = [SKAction sequence:@[animation,shootAction]];
         [archerNode runAction:sequence];
     }
+    
 }
 
 - (SKSpriteNode *)createArrowNode{

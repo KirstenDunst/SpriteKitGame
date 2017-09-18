@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F652B2C1F6F717E00C60335 /* archer.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1F652B2B1F6F717E00C60335 /* archer.atlas */; };
 		1F8AEEFC1F6A51E5006C06D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AEEFB1F6A51E5006C06D4 /* main.m */; };
 		1F8AEEFF1F6A51E5006C06D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AEEFE1F6A51E5006C06D4 /* AppDelegate.m */; };
 		1F8AEF011F6A51E5006C06D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1F8AEF001F6A51E5006C06D4 /* GameScene.sks */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F652B2B1F6F717E00C60335 /* archer.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = archer.atlas; sourceTree = "<group>"; };
 		1F8AEEF71F6A51E5006C06D4 /* SpriteKitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8AEEFB1F6A51E5006C06D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F8AEEFD1F6A51E5006C06D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				1FB943531F6BBB2A00642AF9 /* AirplaneGame.h */,
 				1FB943541F6BBB2A00642AF9 /* AirplaneGame.m */,
 				1F8AEF0A1F6A51E5006C06D4 /* Main.storyboard */,
+				1F652B2B1F6F717E00C60335 /* archer.atlas */,
 				1FB9435A1F6BC56900642AF9 /* airplne.png */,
 				1FB9435C1F6BC5B600642AF9 /* enemy.png */,
 				1FB943511F6BB81900642AF9 /* bg_02.jpg */,
@@ -186,6 +189,7 @@
 				1F8AEF0C1F6A51E5006C06D4 /* Main.storyboard in Resources */,
 				1FB9435D1F6BC5B600642AF9 /* enemy.png in Resources */,
 				1F8AEF011F6A51E5006C06D4 /* GameScene.sks in Resources */,
+				1F652B2C1F6F717E00C60335 /* archer.atlas in Resources */,
 				1F8AEF0E1F6A51E5006C06D4 /* Assets.xcassets in Resources */,
 				1F8AEF1C1F6A6881006C06D4 /* 59a4cfe2550cc.jpg in Resources */,
 				1F8AEF111F6A51E5006C06D4 /* LaunchScreen.storyboard in Resources */,

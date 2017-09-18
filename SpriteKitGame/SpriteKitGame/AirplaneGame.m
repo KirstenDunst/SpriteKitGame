@@ -99,7 +99,7 @@
     
     enemyNode.zPosition = 1;
     
-//    enemyNode.name = @"enemy";
+    enemyNode.name = @"enemy";
     
     [self addChild:enemyNode];
     
