@@ -8,9 +8,16 @@
 
 #import "GameViewController.h"
 //#import "GameScene.h"
-
 #import "MyGameScene.h"
 #import "AirplaneGame.h"
+
+#import <AVFoundation/AVFoundation.h>
+#import "KillMonster.h"
+
+
+@interface GameViewController ()
+@property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
+@end
 
 @implementation GameViewController
 
@@ -44,9 +51,12 @@
 ////    屏幕右下角第二个参数以及值，（node：2）（nodecount表示节点的数量）（个人可以理解为：这个view上面有在某一时刻多少元素存在）
 //    skView.showsNodeCount = YES;
     
-//    我自己创建的基本控件
-    [self frameViewCreateViews];
     
+//    我自己创建的基本控件
+//    [self frameViewCreateViews];
+   
+//    测试3
+    [self frameCreateViewsForNew];
 }
 - (void)frameViewCreateViews{
     SKView *skView = (SKView *)self.view;
@@ -59,6 +69,25 @@
     [skView presentScene:gameScane];
 }
 
+- (void)frameCreateViewsForNew{
+//    背景音乐
+    NSError *error;
+    NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"background-music-aac" withExtension:@"caf"];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = -1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
+    // Configure the view.
+    SKView * skView = (SKView *)self.view;
+    skView.showsFPS = YES;
+    skView.showsNodeCount = YES;
+    
+    // Create and configure the scene.
+    SKScene * scene = [KillMonster sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    // Present the scene.
+    [skView presentScene:scene];
+}
 
 
 

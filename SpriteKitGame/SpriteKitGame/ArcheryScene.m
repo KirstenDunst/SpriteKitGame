@@ -34,6 +34,7 @@
 - (void)didMoveToView:(SKView *)view{
     [super didMoveToView:view];
     ballCategory = 1;
+    arrowCategory = 2;
 //    创建背景
     [self backgroundNode];
 //        进行初始化操作
@@ -90,6 +91,7 @@
     }];
 }
 
+//创建一个节点
 - (SKSpriteNode *)createArcherNode{
     SKSpriteNode *archerNode = [[SKSpriteNode alloc]initWithImageNamed:@"archer001.png"];
     archerNode.name = NodeName;
@@ -179,6 +181,7 @@
 //游戏结束
 - (void)gameOver{
     [self runAction:[SKAction waitForDuration:5.0]];
+//    这个节点应该是创建一个显示分数的view类似的展示
 //    SKLabelNode *scoreNode = [self createScoreNode];
 //    [self addChild:scoreNode];
     SKAction *fadeout = [SKAction sequence:@[[SKAction waitForDuration:3.0],[SKAction fadeOutWithDuration:3.0]]];

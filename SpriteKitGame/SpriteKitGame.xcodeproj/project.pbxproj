@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1F652B2C1F6F717E00C60335 /* archer.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1F652B2B1F6F717E00C60335 /* archer.atlas */; };
+		1F652B311F6FAC6500C60335 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1F652B2E1F6FAC6500C60335 /* background-music-aac.caf */; };
+		1F652B321F6FAC6500C60335 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1F652B2F1F6FAC6500C60335 /* pew-pew-lei.caf */; };
+		1F652B331F6FAC6500C60335 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 1F652B301F6FAC6500C60335 /* sprites.atlas */; };
+		1F652B361F6FAD9F00C60335 /* KillMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F652B351F6FAD9F00C60335 /* KillMonster.m */; };
+		1F652B3E1F6FB82F00C60335 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F652B3D1F6FB82F00C60335 /* GameOverScene.m */; };
 		1F8AEEFC1F6A51E5006C06D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AEEFB1F6A51E5006C06D4 /* main.m */; };
 		1F8AEEFF1F6A51E5006C06D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AEEFE1F6A51E5006C06D4 /* AppDelegate.m */; };
 		1F8AEF011F6A51E5006C06D4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1F8AEF001F6A51E5006C06D4 /* GameScene.sks */; };
@@ -30,6 +35,13 @@
 
 /* Begin PBXFileReference section */
 		1F652B2B1F6F717E00C60335 /* archer.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = archer.atlas; sourceTree = "<group>"; };
+		1F652B2E1F6FAC6500C60335 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		1F652B2F1F6FAC6500C60335 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		1F652B301F6FAC6500C60335 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		1F652B341F6FAD9F00C60335 /* KillMonster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KillMonster.h; sourceTree = "<group>"; };
+		1F652B351F6FAD9F00C60335 /* KillMonster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KillMonster.m; sourceTree = "<group>"; };
+		1F652B3C1F6FB82F00C60335 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		1F652B3D1F6FB82F00C60335 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 		1F8AEEF71F6A51E5006C06D4 /* SpriteKitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8AEEFB1F6A51E5006C06D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F8AEEFD1F6A51E5006C06D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +81,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F652B2D1F6FAC6500C60335 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1F652B2E1F6FAC6500C60335 /* background-music-aac.caf */,
+				1F652B2F1F6FAC6500C60335 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		1F652B371F6FAEE300C60335 /* one */ = {
+			isa = PBXGroup;
+			children = (
+				1F652B2B1F6F717E00C60335 /* archer.atlas */,
+				1FB9435A1F6BC56900642AF9 /* airplne.png */,
+				1FB9435C1F6BC5B600642AF9 /* enemy.png */,
+				1FB943511F6BB81900642AF9 /* bg_02.jpg */,
+				1F8AEF1B1F6A6881006C06D4 /* 59a4cfe2550cc.jpg */,
+				1F9931271F6B710000786D7E /* archer001.png */,
+				1F9931291F6B711500786D7E /* BallTexture.png */,
+				1F8AEF181F6A633A006C06D4 /* MyGameScene.h */,
+				1F8AEF191F6A633A006C06D4 /* MyGameScene.m */,
+				1F8AEF1D1F6A6FB4006C06D4 /* ArcheryScene.h */,
+				1F8AEF1E1F6A6FB4006C06D4 /* ArcheryScene.m */,
+			);
+			name = one;
+			sourceTree = "<group>";
+		};
+		1F652B391F6FAF1F00C60335 /* two */ = {
+			isa = PBXGroup;
+			children = (
+				1FB943531F6BBB2A00642AF9 /* AirplaneGame.h */,
+				1FB943541F6BBB2A00642AF9 /* AirplaneGame.m */,
+			);
+			name = two;
+			sourceTree = "<group>";
+		};
+		1F652B3A1F6FAF3700C60335 /* Origin */ = {
+			isa = PBXGroup;
+			children = (
+				1F8AEF001F6A51E5006C06D4 /* GameScene.sks */,
+				1F8AEF021F6A51E5006C06D4 /* Actions.sks */,
+				1F8AEF041F6A51E5006C06D4 /* GameScene.h */,
+				1F8AEF051F6A51E5006C06D4 /* GameScene.m */,
+			);
+			name = Origin;
+			sourceTree = "<group>";
+		};
+		1F652B3B1F6FAF5E00C60335 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				1F652B2D1F6FAC6500C60335 /* Sounds */,
+				1F652B301F6FAC6500C60335 /* sprites.atlas */,
+				1F652B341F6FAD9F00C60335 /* KillMonster.h */,
+				1F652B351F6FAD9F00C60335 /* KillMonster.m */,
+				1F652B3C1F6FB82F00C60335 /* GameOverScene.h */,
+				1F652B3D1F6FB82F00C60335 /* GameOverScene.m */,
+			);
+			name = third;
+			sourceTree = "<group>";
+		};
 		1F8AEEEE1F6A51E4006C06D4 = {
 			isa = PBXGroup;
 			children = (
@@ -90,26 +162,13 @@
 			children = (
 				1F8AEEFD1F6A51E5006C06D4 /* AppDelegate.h */,
 				1F8AEEFE1F6A51E5006C06D4 /* AppDelegate.m */,
-				1F8AEF001F6A51E5006C06D4 /* GameScene.sks */,
-				1F8AEF021F6A51E5006C06D4 /* Actions.sks */,
-				1F8AEF041F6A51E5006C06D4 /* GameScene.h */,
-				1F8AEF051F6A51E5006C06D4 /* GameScene.m */,
-				1F8AEF181F6A633A006C06D4 /* MyGameScene.h */,
-				1F8AEF191F6A633A006C06D4 /* MyGameScene.m */,
+				1F652B3A1F6FAF3700C60335 /* Origin */,
 				1F8AEF071F6A51E5006C06D4 /* GameViewController.h */,
 				1F8AEF081F6A51E5006C06D4 /* GameViewController.m */,
-				1F8AEF1D1F6A6FB4006C06D4 /* ArcheryScene.h */,
-				1F8AEF1E1F6A6FB4006C06D4 /* ArcheryScene.m */,
-				1FB943531F6BBB2A00642AF9 /* AirplaneGame.h */,
-				1FB943541F6BBB2A00642AF9 /* AirplaneGame.m */,
+				1F652B371F6FAEE300C60335 /* one */,
+				1F652B391F6FAF1F00C60335 /* two */,
+				1F652B3B1F6FAF5E00C60335 /* third */,
 				1F8AEF0A1F6A51E5006C06D4 /* Main.storyboard */,
-				1F652B2B1F6F717E00C60335 /* archer.atlas */,
-				1FB9435A1F6BC56900642AF9 /* airplne.png */,
-				1FB9435C1F6BC5B600642AF9 /* enemy.png */,
-				1FB943511F6BB81900642AF9 /* bg_02.jpg */,
-				1F8AEF1B1F6A6881006C06D4 /* 59a4cfe2550cc.jpg */,
-				1F9931271F6B710000786D7E /* archer001.png */,
-				1F9931291F6B711500786D7E /* BallTexture.png */,
 				1F8AEF0D1F6A51E5006C06D4 /* Assets.xcassets */,
 				1F8AEF0F1F6A51E5006C06D4 /* LaunchScreen.storyboard */,
 				1F8AEF121F6A51E5006C06D4 /* Info.plist */,
@@ -192,11 +251,14 @@
 				1F652B2C1F6F717E00C60335 /* archer.atlas in Resources */,
 				1F8AEF0E1F6A51E5006C06D4 /* Assets.xcassets in Resources */,
 				1F8AEF1C1F6A6881006C06D4 /* 59a4cfe2550cc.jpg in Resources */,
+				1F652B321F6FAC6500C60335 /* pew-pew-lei.caf in Resources */,
 				1F8AEF111F6A51E5006C06D4 /* LaunchScreen.storyboard in Resources */,
 				1F8AEF031F6A51E5006C06D4 /* Actions.sks in Resources */,
+				1F652B331F6FAC6500C60335 /* sprites.atlas in Resources */,
 				1F99312A1F6B711500786D7E /* BallTexture.png in Resources */,
 				1FB9435B1F6BC56900642AF9 /* airplne.png in Resources */,
 				1F9931281F6B710000786D7E /* archer001.png in Resources */,
+				1F652B311F6FAC6500C60335 /* background-music-aac.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,9 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8AEF091F6A51E5006C06D4 /* GameViewController.m in Sources */,
+				1F652B3E1F6FB82F00C60335 /* GameOverScene.m in Sources */,
 				1FB943551F6BBB2A00642AF9 /* AirplaneGame.m in Sources */,
 				1F8AEF1F1F6A6FB4006C06D4 /* ArcheryScene.m in Sources */,
 				1F8AEEFF1F6A51E5006C06D4 /* AppDelegate.m in Sources */,
+				1F652B361F6FAD9F00C60335 /* KillMonster.m in Sources */,
 				1F8AEF061F6A51E5006C06D4 /* GameScene.m in Sources */,
 				1F8AEEFC1F6A51E5006C06D4 /* main.m in Sources */,
 				1F8AEF1A1F6A633B006C06D4 /* MyGameScene.m in Sources */,
