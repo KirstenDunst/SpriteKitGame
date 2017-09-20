@@ -27,6 +27,7 @@
 		1F8AEF1F1F6A6FB4006C06D4 /* ArcheryScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8AEF1E1F6A6FB4006C06D4 /* ArcheryScene.m */; };
 		1F9931281F6B710000786D7E /* archer001.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9931271F6B710000786D7E /* archer001.png */; };
 		1F99312A1F6B711500786D7E /* BallTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F9931291F6B711500786D7E /* BallTexture.png */; };
+		1FA731571F70F2B400C79205 /* StampBlackBlockScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA731561F70F2B400C79205 /* StampBlackBlockScene.m */; };
 		1FB943521F6BB81900642AF9 /* bg_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FB943511F6BB81900642AF9 /* bg_02.jpg */; };
 		1FB943551F6BBB2A00642AF9 /* AirplaneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB943541F6BBB2A00642AF9 /* AirplaneGame.m */; };
 		1FB9435B1F6BC56900642AF9 /* airplne.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9435A1F6BC56900642AF9 /* airplne.png */; };
@@ -63,6 +64,8 @@
 		1F8AEF1E1F6A6FB4006C06D4 /* ArcheryScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcheryScene.m; sourceTree = "<group>"; };
 		1F9931271F6B710000786D7E /* archer001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = archer001.png; sourceTree = "<group>"; };
 		1F9931291F6B711500786D7E /* BallTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallTexture.png; sourceTree = "<group>"; };
+		1FA731551F70F2B400C79205 /* StampBlackBlockScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StampBlackBlockScene.h; sourceTree = "<group>"; };
+		1FA731561F70F2B400C79205 /* StampBlackBlockScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StampBlackBlockScene.m; sourceTree = "<group>"; };
 		1FB943511F6BB81900642AF9 /* bg_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_02.jpg; sourceTree = "<group>"; };
 		1FB943531F6BBB2A00642AF9 /* AirplaneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirplaneGame.h; sourceTree = "<group>"; };
 		1FB943541F6BBB2A00642AF9 /* AirplaneGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirplaneGame.m; sourceTree = "<group>"; };
@@ -168,6 +171,7 @@
 				1F652B371F6FAEE300C60335 /* one */,
 				1F652B391F6FAF1F00C60335 /* two */,
 				1F652B3B1F6FAF5E00C60335 /* third */,
+				1FA731541F70F10200C79205 /* four */,
 				1F8AEF0A1F6A51E5006C06D4 /* Main.storyboard */,
 				1F8AEF0D1F6A51E5006C06D4 /* Assets.xcassets */,
 				1F8AEF0F1F6A51E5006C06D4 /* LaunchScreen.storyboard */,
@@ -183,6 +187,15 @@
 				1F8AEEFB1F6A51E5006C06D4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FA731541F70F10200C79205 /* four */ = {
+			isa = PBXGroup;
+			children = (
+				1FA731551F70F2B400C79205 /* StampBlackBlockScene.h */,
+				1FA731561F70F2B400C79205 /* StampBlackBlockScene.m */,
+			);
+			name = four;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			files = (
 				1F8AEF091F6A51E5006C06D4 /* GameViewController.m in Sources */,
 				1F652B3E1F6FB82F00C60335 /* GameOverScene.m in Sources */,
+				1FA731571F70F2B400C79205 /* StampBlackBlockScene.m in Sources */,
 				1FB943551F6BBB2A00642AF9 /* AirplaneGame.m in Sources */,
 				1F8AEF1F1F6A6FB4006C06D4 /* ArcheryScene.m in Sources */,
 				1F8AEEFF1F6A51E5006C06D4 /* AppDelegate.m in Sources */,

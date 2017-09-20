@@ -14,6 +14,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "KillMonster.h"
 
+#import "StampBlackBlockScene.h"
 
 @interface GameViewController ()
 @property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
@@ -56,7 +57,10 @@
 //    [self frameViewCreateViews];
    
 //    测试3
-    [self frameCreateViewsForNew];
+//    [self frameCreateViewsForNew];
+    
+//   测试4 白块
+    [self frameCreateViewsForWhiteBlock];
 }
 - (void)frameViewCreateViews{
     SKView *skView = (SKView *)self.view;
@@ -69,6 +73,7 @@
     [skView presentScene:gameScane];
 }
 
+//测试3
 - (void)frameCreateViewsForNew{
 //    背景音乐
     NSError *error;
@@ -88,6 +93,22 @@
     // Present the scene.
     [skView presentScene:scene];
 }
+
+//测试4
+- (void)frameCreateViewsForWhiteBlock{
+    SKView *skView = (SKView *)self.view;
+    skView.showsFPS = YES;
+    skView.showsNodeCount = YES;
+    StampBlackBlockScene *whiteBlock = [[StampBlackBlockScene alloc]initWithSize:self.view.frame.size];
+    [skView presentScene:whiteBlock];
+}
+
+
+
+
+
+
+
 
 
 
