@@ -107,13 +107,6 @@
 
 
 
-
-
-
-
-
-
-
 //允许设备自动调整横竖设备的状体
 - (BOOL)shouldAutorotate {
     return YES;
