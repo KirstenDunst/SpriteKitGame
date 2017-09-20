@@ -47,9 +47,15 @@
     [self addChild:whiteNode];
 //    时间限制保证下落的速度能够和白块之间连接起来
     SKAction *actionMove = [SKAction moveTo:CGPointMake(self.view.frame.size.width/8+(self.view.frame.size.width/4)*a, -self.frame.size.height/10) duration:6*speed];
+    SKAction *loseAction = [SKAction runBlock:^{
+    //        反转动画效果时间设置
+        SKTransition *reveal = [SKTransition flipVerticalWithDuration:0.5];
+        SKScene *gameOverScene = [[GameOverScene alloc] initWithSize:self.size won:NO];
+        [self.view presentScene:gameOverScene transition:reveal];
+    }];
     SKAction *actionDone = [SKAction removeFromParent];
     
-    [whiteNode runAction:[SKAction sequence:@[actionMove,actionDone]]];
+    [whiteNode runAction:[SKAction sequence:@[actionMove,loseAction,actionDone]]];
 }
 
 //时间更新，一微秒调一次
