@@ -20,18 +20,22 @@ static const uint32_t monsterCategory = 0x1 << 1;   //(0010).即2；
 @property (nonatomic) int monstersDestroyed;
 @end
 
+//规划位置相加
 static inline CGPoint rwAdd(CGPoint a, CGPoint b) {
     return CGPointMake(a.x + b.x, a.y + b.y);
 }
 
+//计算相关的位移向量
 static inline CGPoint rwSub(CGPoint a, CGPoint b) {
     return CGPointMake(a.x - b.x, a.y - b.y);
 }
 
+//放大距离的方位
 static inline CGPoint rwMult(CGPoint a, float b) {
     return CGPointMake(a.x * b, a.y * b);
 }
 
+//计算距离的长度
 static inline float rwLength(CGPoint a) {
     return sqrtf(a.x * a.x + a.y * a.y);
 }
