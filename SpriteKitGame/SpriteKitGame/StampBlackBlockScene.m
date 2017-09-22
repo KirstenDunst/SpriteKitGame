@@ -58,12 +58,14 @@
     [whiteNode runAction:[SKAction sequence:@[actionMove,loseAction,actionDone]]];
 }
 
-//时间更新，一微秒调一次
+// 获取时间增量
+// 如果我们运行的每秒帧数低于60，我们依然希望一切和每秒60帧移动的位移相同
 - (void)update:(NSTimeInterval)currentTime{
     NSLog(@">>>>>>>>>>>>>%f",currentTime);
 //    距离上次的时间间隔
     CFTimeInterval timeSinceLast = currentTime - self.lastUpdateTimeInterval;
     self.lastUpdateTimeInterval = currentTime;
+//    原来。timeSinceLast >1       // 如果上次更新后得时间增量大于1秒
     if (timeSinceLast >= speed) {
 //        一微妙
         timeSinceLast = 1.0/60.0;
@@ -79,10 +81,6 @@
         self.lastSpawnTimeInterval = 0;
         [self getFrameCreate];
     }
-}
-
-- (void)remove:(SKSpriteNode *)node{
-    [node removeFromParent];
 }
 
 
